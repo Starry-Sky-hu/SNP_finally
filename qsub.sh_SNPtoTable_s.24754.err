@@ -1,0 +1,42 @@
+Using GATK jar /public/agis/huangsanwen_group/fengshuangshuang/huyong/software/gatk-4.1.7.0/gatk-package-4.1.7.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx50g -jar /public/agis/huangsanwen_group/fengshuangshuang/huyong/software/gatk-4.1.7.0/gatk-package-4.1.7.0-local.jar VariantsToTable -R /public/agis/huangsanwen_group/fengshuangshuang/huyong/Ref_genome/V4/S_lycopersicum_chromosomes.4.00.fa -V /public/agis/huangsanwen_group/fengshuangshuang/huyong/tem_file/output.vcf.gz -F CHROM -F POS -F REF -F ALT -GF GT -O /public/agis/huangsanwen_group/fengshuangshuang/huyong/tem_file/SNP.output.table
+11:01:54.851 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/public/agis/huangsanwen_group/fengshuangshuang/huyong/software/gatk-4.1.7.0/gatk-package-4.1.7.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+Aug 15, 2020 11:02:00 AM shaded.cloud_nio.com.google.auth.oauth2.ComputeEngineCredentials runningOnComputeEngine
+INFO: Failed to detect whether we are running on Google Compute Engine.
+11:02:00.398 INFO  VariantsToTable - ------------------------------------------------------------
+11:02:00.399 INFO  VariantsToTable - The Genome Analysis Toolkit (GATK) v4.1.7.0
+11:02:00.399 INFO  VariantsToTable - For support and documentation go to https://software.broadinstitute.org/gatk/
+11:02:00.399 INFO  VariantsToTable - Executing as fengshuangshuang@comput20 on Linux v2.6.32-431.el6.x86_64 amd64
+11:02:00.400 INFO  VariantsToTable - Java runtime: Java HotSpot(TM) 64-Bit Server VM v1.8.0_261-b12
+11:02:00.400 INFO  VariantsToTable - Start Date/Time: August 15, 2020 11:01:54 AM CST
+11:02:00.400 INFO  VariantsToTable - ------------------------------------------------------------
+11:02:00.400 INFO  VariantsToTable - ------------------------------------------------------------
+11:02:00.400 INFO  VariantsToTable - HTSJDK Version: 2.21.2
+11:02:00.400 INFO  VariantsToTable - Picard Version: 2.21.9
+11:02:00.401 INFO  VariantsToTable - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+11:02:00.401 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+11:02:00.401 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+11:02:00.401 INFO  VariantsToTable - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+11:02:00.401 INFO  VariantsToTable - Deflater: IntelDeflater
+11:02:00.401 INFO  VariantsToTable - Inflater: IntelInflater
+11:02:00.401 INFO  VariantsToTable - GCS max retries/reopens: 20
+11:02:00.401 INFO  VariantsToTable - Requester pays: disabled
+11:02:00.401 INFO  VariantsToTable - Initializing engine
+11:02:00.911 INFO  FeatureManager - Using codec VCFCodec to read file file:///public/agis/huangsanwen_group/fengshuangshuang/huyong/tem_file/output.vcf.gz
+11:02:01.233 INFO  VariantsToTable - Done initializing engine
+11:02:01.240 WARN  VariantsToTable - Allele-specific fields will only be split if splitting multi-allelic variants is specified (`--split-multi-allelic` or `-SMA`
+11:02:01.241 INFO  ProgressMeter - Starting traversal
+11:02:01.241 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+11:02:11.276 INFO  ProgressMeter -   SL4.0ch01:34876502              0.2                168000        1005887.6
+11:02:21.270 INFO  ProgressMeter -   SL4.0ch04:15947875              0.3                359000        1075494.3
+11:02:31.286 INFO  ProgressMeter -   SL4.0ch04:59684969              0.5                552000        1102346.5
+11:02:41.316 INFO  ProgressMeter -   SL4.0ch05:33650614              0.7                745000        1115436.4
+11:02:51.315 INFO  ProgressMeter -   SL4.0ch06:11054588              0.8                939000        1125134.8
+11:03:01.346 INFO  ProgressMeter -   SL4.0ch10:57334074              1.0               1131000        1129024.2
+11:03:11.346 INFO  ProgressMeter -   SL4.0ch11:37792810              1.2               1326000        1134869.1
+11:03:20.185 INFO  ProgressMeter -   SL4.0ch12:64481772              1.3               1497900        1138467.0
+11:03:20.185 INFO  ProgressMeter - Traversal complete. Processed 1497900 total variants in 1.3 minutes.
+11:03:20.189 INFO  VariantsToTable - Shutting down engine
+[August 15, 2020 11:03:20 AM CST] org.broadinstitute.hellbender.tools.walkers.variantutils.VariantsToTable done. Elapsed time: 1.43 minutes.
+Runtime.totalMemory()=3810525184

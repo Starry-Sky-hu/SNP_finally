@@ -1,0 +1,30 @@
+Call SNP
+>>>>>Target
+The aim of this project is to analyse the heterozygosity and similarity of 1255, 1452, 198, 1746.
+
+
+>>>>>Structure of the Source
+0. Build index files
+1. Maping,sort,rmove duplicate,build index after remove duplicate,call mutution
+2. Combine gvcf,convert to vcf,export SNP as a table file
+3. Calculate heterozygosity and similarity
+
+
+>>>>>Path of relational file
+Software:
+bwa, Samtools, GATK, R
+Path of Software:/public/agis/huangsanwen_group/fengshuangshuang/huyong/software
+
+Source:
+ParentSNP.sh
+
+Err file:
+qsub.sh_ParentSNP_sh.11304.err
+qsub.sh_SNPtoTable_s.24754.err
+
+
+>>>>>Result
+SNP plot is in SNPplotPDF_mod
+
+
+by HuYong
